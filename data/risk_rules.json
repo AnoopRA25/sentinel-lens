@@ -1,0 +1,313 @@
+{
+  "version": "2.0.0",
+  "score_formula": {
+    "expression": "clamp(base_severity + person_modifier + combo_modifier, 1, 5)",
+    "min_score": 1,
+    "max_score": 5,
+    "score_mapping": {
+      "low": {
+        "min": 1,
+        "max": 2,
+        "label": "Low",
+        "description": "Minor physical injury unlikely or easily avoided."
+      },
+      "medium": {
+        "min": 3,
+        "max": 3,
+        "label": "Medium",
+        "description": "Noticeable injury potential requiring precaution."
+      },
+      "high": {
+        "min": 4,
+        "max": 5,
+        "label": "High",
+        "description": "Substantial risk of severe injury requiring urgent mitigation."
+      }
+    }
+  },
+  "base_severities": {
+    "H01": {
+      "rule_id": "R-BASE-H01",
+      "category_id": "H01",
+      "base_score": 2,
+      "name": "slip_wet",
+      "rationale": "Loss of traction from moisture or loose rugs presents moderate slip risk."
+    },
+    "H02": {
+      "rule_id": "R-BASE-H02",
+      "category_id": "H02",
+      "base_score": 2,
+      "name": "trip_clutter",
+      "rationale": "Obstacles and trailing cables in walkways pose stumbling hazards."
+    },
+    "H03": {
+      "rule_id": "R-BASE-H03",
+      "category_id": "H03",
+      "base_score": 3,
+      "name": "electrical",
+      "rationale": "Exposed voltage, overloaded adapters, or damp sockets pose direct electric shock hazards."
+    },
+    "H04": {
+      "rule_id": "R-BASE-H04",
+      "category_id": "H04",
+      "base_score": 3,
+      "name": "fire_heat",
+      "rationale": "Active burners, boiling liquids, and space heaters pose acute burn and ignition hazards."
+    },
+    "H05": {
+      "rule_id": "R-BASE-H05",
+      "category_id": "H05",
+      "base_score": 2,
+      "name": "sharp_glass",
+      "rationale": "Exposed knives, razor blades, and glass shards can cause severe lacerations."
+    },
+    "H06": {
+      "rule_id": "R-BASE-H06",
+      "category_id": "H06",
+      "base_score": 3,
+      "name": "fall_height",
+      "rationale": "Unguarded staircases, balconies, and steep drops carry high fall injury potential."
+    },
+    "H07": {
+      "rule_id": "R-BASE-H07",
+      "category_id": "H07",
+      "base_score": 2,
+      "name": "unstable_falling",
+      "rationale": "Unanchored furniture and falling heavy items can cause blunt crush trauma."
+    },
+    "H08": {
+      "rule_id": "R-BASE-H08",
+      "category_id": "H08",
+      "base_score": 2,
+      "name": "chemical_poison",
+      "rationale": "Domestic cleaning agents, unsealed medicines, and solvents carry toxic chemical risks."
+    },
+    "H09": {
+      "rule_id": "R-BASE-H09",
+      "category_id": "H09",
+      "base_score": 1,
+      "name": "choking_small_objects",
+      "rationale": "Small objects pose baseline choking risks primarily for infants and toddlers."
+    },
+    "H10": {
+      "rule_id": "R-BASE-H10",
+      "category_id": "H10",
+      "base_score": 2,
+      "name": "water_drowning",
+      "rationale": "Standing domestic water containers present submersion and drowning hazards."
+    },
+    "H11": {
+      "rule_id": "R-BASE-H11",
+      "category_id": "H11",
+      "base_score": 2,
+      "name": "strangulation_entrapment",
+      "rationale": "Dangling cords and entrapment loops pose acute constriction hazards."
+    },
+    "H12": {
+      "rule_id": "R-BASE-H12",
+      "category_id": "H12",
+      "base_score": 2,
+      "name": "structural_damage",
+      "rationale": "Cracked ceilings, loose railings, or sagging masonry can fail under load."
+    },
+    "H13": {
+      "rule_id": "R-BASE-H13",
+      "category_id": "H13",
+      "base_score": 2,
+      "name": "poor_visibility",
+      "rationale": "Inadequate lighting and harsh glare obscure existing physical obstacles."
+    },
+    "H14": {
+      "rule_id": "R-BASE-H14",
+      "category_id": "H14",
+      "base_score": 2,
+      "name": "outdoor_traffic_terrain",
+      "rationale": "Potholes, broken sidewalks, and vehicle thoroughfares cause outdoor trauma."
+    },
+    "H15": {
+      "rule_id": "R-BASE-H15",
+      "category_id": "H15",
+      "base_score": 2,
+      "name": "other_observable",
+      "rationale": "Unclassified observable physical hazards assigned moderate baseline."
+    }
+  },
+  "combination_rules": [
+    {
+      "rule_id": "R-COMBO-WATER-ELEC",
+      "primary_category": "H03",
+      "description": "Electrical item or socket strip near a water source",
+      "condition": {
+        "primary_category": "H03",
+        "secondary_factors": [
+          "near_water",
+          "sink",
+          "basin",
+          "tub",
+          "bucket",
+          "puddle",
+          "pipe_leak",
+          "co_occurring_H01",
+          "co_occurring_H10"
+        ]
+      },
+      "modifier": 2,
+      "rationale": "Electrical equipment in close proximity to water dramatically escalates electric shock and electrocution hazard."
+    },
+    {
+      "rule_id": "R-COMBO-FLAME-FLAMMABLE",
+      "primary_category": "H04",
+      "description": "Flame or heat source near combustible materials",
+      "condition": {
+        "primary_category": "H04",
+        "secondary_factors": [
+          "near_flammable",
+          "paper",
+          "cloth",
+          "curtains",
+          "aerosol",
+          "gas_cylinder",
+          "cardboard",
+          "grease"
+        ]
+      },
+      "modifier": 2,
+      "rationale": "Open flame or high thermal output near combustible materials creates severe rapid fire ignition risk."
+    },
+    {
+      "rule_id": "R-COMBO-TALL-FURNITURE-CHILD",
+      "primary_category": "H07",
+      "description": "Tall unanchored furniture with baby or child present",
+      "condition": {
+        "primary_category": "H07",
+        "person_categories": ["baby", "child"],
+        "secondary_factors": ["tall_unanchored", "bookcase", "dresser", "tv_stand", "drawers"]
+      },
+      "modifier": 1,
+      "rationale": "Young children frequently climb furniture or open drawers, dramatically increasing fatal tip-over crush danger."
+    },
+    {
+      "rule_id": "R-COMBO-DARK-STAIRS",
+      "primary_category": "H06",
+      "description": "Staircase combined with poor visibility or darkness",
+      "condition": {
+        "primary_category": "H06",
+        "secondary_factors": [
+          "stairs",
+          "steps",
+          "dim_lighting",
+          "dark",
+          "shadowed",
+          "co_occurring_H13"
+        ]
+      },
+      "modifier": 2,
+      "rationale": "Inadequate lighting on stairs severely impairs depth perception and tread edge recognition, multiplying fall severity."
+    },
+    {
+      "rule_id": "R-COMBO-SLIP-STAIRS",
+      "primary_category": "H01",
+      "description": "Wet or slippery surface on stair treads",
+      "condition": {
+        "primary_category": "H01",
+        "secondary_factors": [
+          "stairs",
+          "steps",
+          "wet_tread",
+          "loose_stair_runner",
+          "co_occurring_H06"
+        ]
+      },
+      "modifier": 2,
+      "rationale": "Moisture or loose mats on stairs causes sudden downward falls with severe kinetic impact."
+    },
+    {
+      "rule_id": "R-COMBO-BALCONY-CLIMB",
+      "primary_category": "H06",
+      "description": "Climbable furniture near balcony railing or window with child",
+      "condition": {
+        "primary_category": "H06",
+        "person_categories": ["baby", "child"],
+        "secondary_factors": [
+          "balcony",
+          "window",
+          "climbable_furniture",
+          "chair_near_railing"
+        ]
+      },
+      "modifier": 2,
+      "rationale": "Furniture positioned near railings or low windows provides stepping platforms for children, bypassing fall barriers."
+    },
+    {
+      "rule_id": "R-COMBO-CORD-CRIB",
+      "primary_category": "H11",
+      "description": "Dangling cords or plastic packaging within reach of baby crib or bed",
+      "condition": {
+        "primary_category": "H11",
+        "person_categories": ["baby", "child"],
+        "environment": ["bedroom"],
+        "secondary_factors": ["crib", "bed", "monitor_cord", "blind_cord", "plastic_bag"]
+      },
+      "modifier": 2,
+      "rationale": "Cords or plastic packaging in infant sleeping areas present catastrophic strangulation and suffocation hazards."
+    },
+    {
+      "rule_id": "R-COMBO-MEDICINE-CHILD",
+      "primary_category": "H08",
+      "description": "Medicines or chemical cleaners on low surfaces within reach of child",
+      "condition": {
+        "primary_category": "H08",
+        "person_categories": ["baby", "child"],
+        "secondary_factors": ["low_surface", "counter_edge", "open_cabinet", "floor_level"]
+      },
+      "modifier": 1,
+      "rationale": "Accessible pharmaceutical or chemical containers invite exploratory ingestion by young children."
+    }
+  ],
+  "evidence_gating_rules": {
+    "rule_id": "R-GATE-EVIDENCE",
+    "description": "Downgrades risk level to uncertain if hazard is only possible or evidence strength is weak.",
+    "condition": "status == 'possible' || evidence_strength == 'weak'",
+    "actions": {
+      "assigned_level": "uncertain",
+      "retain_potential_level": true
+    },
+    "rationale": "Risk levels are auditable facts. Possible hazards or weak sightings cannot be classified as definitive Low/Medium/High without direct verification."
+  },
+  "potential_level_rules": {
+    "rule_id": "R-POTENTIAL-LEVEL",
+    "description": "Calculates potential level for possible or weak items based on hypothetical confirmed score.",
+    "score_formula": "clamp(base_severity + person_modifier + combo_modifier, 1, 5)",
+    "label_template": "Check this — could be {potential_level}"
+  },
+  "overall_risk_rules": {
+    "rule_id": "R-OVERALL-MAX",
+    "description": "Aggregates overall scene risk based strictly on verified observed and likely hazards.",
+    "logic": [
+      "overall_risk is the maximum level among all hazards with status in ['observed', 'likely'].",
+      "If all candidate hazards have status == 'possible', overall_risk is 'uncertain'.",
+      "If no candidate hazards exist and perception succeeded with adequate coverage, overall_risk is 'low' and outcome is 'none_observed'.",
+      "If perception encountered heavy coverage gaps or unassessable image quality with no hazards detected, outcome is 'inconclusive'."
+    ]
+  },
+  "immediate_action_rules": [
+    {
+      "rule_id": "R-ACTION-FIRE",
+      "description": "Active visible fire, smoke, or uncontrolled combustion",
+      "pattern": "visible fire, open uncontrolled flame, or heavy smoke",
+      "action": {
+        "immediate_action": true,
+        "banner_message": "Possible fire or heavy smoke observed. Evacuate people immediately and contact local emergency services."
+      }
+    },
+    {
+      "rule_id": "R-ACTION-LIVE-WIRE-WATER",
+      "description": "Exposed energized electrical conductor in direct contact with pooled water",
+      "pattern": "exposed bare wire or open live conductor touching standing water",
+      "action": {
+        "immediate_action": true,
+        "banner_message": "Exposed electrical conductor touching water observed. Keep everyone away and shut off power at main breaker immediately."
+      }
+    }
+  ]
+}

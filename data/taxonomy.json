@@ -1,0 +1,425 @@
+{
+  "version": "2.0.0",
+  "categories": [
+    {
+      "id": "H01",
+      "name": "slip_wet",
+      "title": "Slip & Wet Floor",
+      "description": "Liquid spills, damp or polished floor surfaces, soap residue, or loose mats creating loss of traction on walking paths.",
+      "examples": [
+        "wet or shiny floor",
+        "liquid spills or puddles",
+        "soap residue near sinks, showers, or tubs",
+        "unanchored loose rug or mat",
+        "oil or grease splatters on floor"
+      ],
+      "base_severity": 2,
+      "icon_shape": "droplet",
+      "keywords": [
+        "slip",
+        "wet",
+        "puddle",
+        "spill",
+        "slick",
+        "moisture",
+        "water on floor",
+        "soap residue",
+        "loose rug",
+        "unsecured mat",
+        "grease"
+      ]
+    },
+    {
+      "id": "H02",
+      "name": "trip_clutter",
+      "title": "Trip & Walkway Clutter",
+      "description": "Objects, trailing cables, clutter in primary walking paths, or uneven floor transitions that can cause stumbles.",
+      "examples": [
+        "objects left in walkways",
+        "loose electrical cables on floor",
+        "uneven door threshold or transition strip",
+        "scattered toys or shoes",
+        "curled rug corners"
+      ],
+      "base_severity": 2,
+      "icon_shape": "footprints",
+      "keywords": [
+        "trip",
+        "clutter",
+        "cables on floor",
+        "trailing cord",
+        "loose wire",
+        "obstacle",
+        "walkway blocked",
+        "threshold",
+        "uneven floor",
+        "scattered items"
+      ]
+    },
+    {
+      "id": "H03",
+      "name": "electrical",
+      "title": "Electrical Hazard",
+      "description": "Exposed electrical wiring, damaged insulation, overloaded power strips, sockets near moisture, or uncovered wall outlets.",
+      "examples": [
+        "exposed electrical wiring",
+        "damaged or frayed cord",
+        "overloaded socket strip or adapter",
+        "power socket located near water source",
+        "uncovered lower wall sockets"
+      ],
+      "base_severity": 3,
+      "icon_shape": "zap",
+      "keywords": [
+        "electrical",
+        "exposed wire",
+        "damaged cord",
+        "frayed wire",
+        "power strip",
+        "extension cord",
+        "socket",
+        "outlet",
+        "plug",
+        "short circuit",
+        "spark",
+        "overloaded"
+      ]
+    },
+    {
+      "id": "H04",
+      "name": "fire_heat",
+      "title": "Fire & Heat Hazard",
+      "description": "Open flames, hot stovetops or cookware, space heaters, hot liquids, combustible materials near heat sources, or gas cylinder issues.",
+      "examples": [
+        "open flame or active burner",
+        "hot stove or appliance surface",
+        "hot liquid in reach or pan handle protruding",
+        "flammable materials near heat source",
+        "gas cylinder, regulator, or smell of gas",
+        "smoke or burning smell"
+      ],
+      "base_severity": 3,
+      "icon_shape": "flame",
+      "keywords": [
+        "fire",
+        "flame",
+        "stove",
+        "burner",
+        "hot",
+        "kettle",
+        "boiling liquid",
+        "heater",
+        "combustible",
+        "gas cylinder",
+        "regulator",
+        "smoke",
+        "iron",
+        "oven"
+      ]
+    },
+    {
+      "id": "H05",
+      "name": "sharp_glass",
+      "title": "Sharp Objects & Glass",
+      "description": "Unsheathed knives, broken glass or ceramics, razor blades, sharp metal edges, or uncovered cutting tools.",
+      "examples": [
+        "unsheathed kitchen knives on counter",
+        "broken glass or ceramic shards",
+        "exposed razor blades or box cutters",
+        "sharp protruding metal edges or trim",
+        "scissors or shears left open"
+      ],
+      "base_severity": 2,
+      "icon_shape": "scissors",
+      "keywords": [
+        "sharp",
+        "knife",
+        "knives",
+        "blade",
+        "glass",
+        "broken glass",
+        "ceramic",
+        "razor",
+        "scissors",
+        "cutting board",
+        "exposed edge"
+      ]
+    },
+    {
+      "id": "H06",
+      "name": "fall_height",
+      "title": "Fall from Height",
+      "description": "Unguarded stairs, open balcony or window ledges, ladders, raised platforms, open drains, or steep drops without barriers.",
+      "examples": [
+        "stairs without safety guard or gate",
+        "unprotected balcony or low window ledge",
+        "unattended standing ladder or stepstool",
+        "open floor drain or deep pit",
+        "raised unguarded ledge or loft drop"
+      ],
+      "base_severity": 3,
+      "icon_shape": "stairs",
+      "keywords": [
+        "fall",
+        "height",
+        "stairs",
+        "staircase",
+        "steps",
+        "balcony",
+        "ledge",
+        "window",
+        "unprotected edge",
+        "drop-off",
+        "ladder",
+        "drain",
+        "pit",
+        "banister"
+      ]
+    },
+    {
+      "id": "H07",
+      "name": "unstable_falling",
+      "title": "Unstable & Falling Objects",
+      "description": "Tall unanchored furniture, televisions on unstable or narrow stands, heavy items stacked on high shelves, or insecure hanging fixtures.",
+      "examples": [
+        "tall unanchored bookcase or dresser",
+        "television placed on narrow or wobbly stand",
+        "heavy boxes or planters on high shelves",
+        "insecurely hanging wall mirror or frame",
+        "climbable furniture with tip-over risk"
+      ],
+      "base_severity": 2,
+      "icon_shape": "furniture",
+      "keywords": [
+        "unstable",
+        "tip over",
+        "topple",
+        "bookcase",
+        "shelf",
+        "tv stand",
+        "tall furniture",
+        "unanchored",
+        "heavy object",
+        "hanging fixture",
+        "wobbly"
+      ]
+    },
+    {
+      "id": "H08",
+      "name": "chemical_poison",
+      "title": "Chemical & Poison Hazard",
+      "description": "Household cleaning chemicals, unsealed medicines, pesticides, detergents, alcohol, or corrosive fluids accessible within reach.",
+      "examples": [
+        "prescription or OTC medicines on tables",
+        "cleaning agents or bleach within reach",
+        "garden pesticides or chemical sprays",
+        "liquid detergent pods or drain cleaners",
+        "accessible bottles of alcohol or fuel"
+      ],
+      "base_severity": 2,
+      "icon_shape": "flask",
+      "keywords": [
+        "chemical",
+        "poison",
+        "toxic",
+        "medicine",
+        "pill",
+        "pills",
+        "detergent",
+        "bleach",
+        "disinfectant",
+        "pesticide",
+        "cleaner",
+        "cleaning agent",
+        "alcohol"
+      ]
+    },
+    {
+      "id": "H09",
+      "name": "choking_small_objects",
+      "title": "Choking & Small Objects",
+      "description": "Loose coins, button batteries, small toy parts, beads, small magnetic items, or pebbles that pose choking hazards for young children.",
+      "examples": [
+        "loose coins on low coffee table or floor",
+        "button batteries or open battery compartment",
+        "small toy parts under 3 cm",
+        "beads, buttons, or loose screws",
+        "small powerful magnets or marbles"
+      ],
+      "base_severity": 1,
+      "icon_shape": "circle-dot",
+      "keywords": [
+        "choking",
+        "small object",
+        "coin",
+        "coins",
+        "button battery",
+        "small part",
+        "bead",
+        "magnet",
+        "marble",
+        "cap",
+        "loose screw"
+      ]
+    },
+    {
+      "id": "H10",
+      "name": "water_drowning",
+      "title": "Water & Drowning Hazard",
+      "description": "Open buckets or tubs filled with water, uncovered storage tanks, filled bathtubs, paddling pools, or open drainage sumps.",
+      "examples": [
+        "open bucket or tub filled with water",
+        "filled bathtub left unattended",
+        "uncovered water storage tank or sump",
+        "unfenced paddling pool or garden pond",
+        "large water trough accessible to infants"
+      ],
+      "base_severity": 2,
+      "icon_shape": "waves",
+      "keywords": [
+        "drowning",
+        "bucket of water",
+        "tub",
+        "bathtub",
+        "water tank",
+        "sump",
+        "pool",
+        "basin filled",
+        "standing water",
+        "trough"
+      ]
+    },
+    {
+      "id": "H11",
+      "name": "strangulation_entrapment",
+      "title": "Strangulation & Entrapment",
+      "description": "Dangling blind or curtain cords, loose ropes, plastic bags, cords near cribs, or entrapment gaps in railings and furniture.",
+      "examples": [
+        "looped window blind or curtain cords",
+        "thin plastic bags within infant reach",
+        "wide gaps between crib slats or bed railings",
+        "loose ropes or cords near sleeping area",
+        "entrapment spaces between wall and furniture"
+      ],
+      "base_severity": 2,
+      "icon_shape": "cord",
+      "keywords": [
+        "strangulation",
+        "entrapment",
+        "cord",
+        "blind cord",
+        "curtain cord",
+        "rope",
+        "loop",
+        "plastic bag",
+        "gap",
+        "rail gap",
+        "crib gap"
+      ]
+    },
+    {
+      "id": "H12",
+      "name": "structural_damage",
+      "title": "Structural Damage",
+      "description": "Cracks in walls or ceilings, spalling or hanging plaster, severe damp or mould patches, broken railing, or loose architectural elements.",
+      "examples": [
+        "deep masonry cracks in wall or beam",
+        "hanging or crumbling ceiling plaster",
+        "severe damp or visible black mould patches",
+        "loose, wobbly, or broken stair banister",
+        "loose floor tiles or rotting floorboards"
+      ],
+      "base_severity": 2,
+      "icon_shape": "home-alert",
+      "keywords": [
+        "structural",
+        "crack",
+        "plaster",
+        "damp",
+        "mould",
+        "mold",
+        "water damage",
+        "loose fixture",
+        "sagging",
+        "crumbling",
+        "masonry"
+      ]
+    },
+    {
+      "id": "H13",
+      "name": "poor_visibility",
+      "title": "Poor Visibility & Glare",
+      "description": "Inadequate illumination on stairs or hallways, blinding glare, shadows obscuring hazards, or obstructed lines of sight.",
+      "examples": [
+        "unlit or dark stairs and corridors",
+        "harsh unshielded glare obscuring steps",
+        "burned-out light fixtures in high-traffic path",
+        "heavy shadows hiding floor obstacles or drop-offs",
+        "blocked sight lines at blind corners"
+      ],
+      "base_severity": 2,
+      "icon_shape": "eye-off",
+      "keywords": [
+        "dark",
+        "dim",
+        "poor lighting",
+        "unlit",
+        "visibility",
+        "glare",
+        "shadowed",
+        "sight line blocked",
+        "obscured step"
+      ]
+    },
+    {
+      "id": "H14",
+      "name": "outdoor_traffic_terrain",
+      "title": "Outdoor Traffic & Terrain",
+      "description": "Vehicle traffic proximity, open gates near roadway, potholes, broken sidewalks, steep slippery slopes, or exposed utility wiring outdoors.",
+      "examples": [
+        "open perimeter gate leading directly to roadway",
+        "deep potholes or broken pavement in walking path",
+        "steep uneven slope or unpaved embankment",
+        "low-hanging or exposed utility wiring outdoors",
+        "unfenced vehicle maneuvering or parking zone"
+      ],
+      "base_severity": 2,
+      "icon_shape": "car",
+      "keywords": [
+        "traffic",
+        "vehicle",
+        "road",
+        "street",
+        "car",
+        "pothole",
+        "uneven ground",
+        "sidewalk",
+        "terrain",
+        "steep drop",
+        "outdoor wiring",
+        "gate open"
+      ]
+    },
+    {
+      "id": "H15",
+      "name": "other_observable",
+      "title": "Other Observable Hazard",
+      "description": "Physical hazards directly visible in the scene that do not clearly fit into categories H01 through H14; classified with uncertain status.",
+      "examples": [
+        "unusual physical obstruction or barrier",
+        "unidentified container with hazardous markings",
+        "atypical observable mechanical hazard",
+        "unclassified environmental safety concern"
+      ],
+      "base_severity": 2,
+      "icon_shape": "help-circle",
+      "keywords": [
+        "other",
+        "unclassified",
+        "unknown hazard",
+        "anomaly",
+        "atypical hazard"
+      ]
+    }
+  ]
+}

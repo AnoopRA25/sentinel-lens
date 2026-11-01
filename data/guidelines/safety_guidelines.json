@@ -1,0 +1,775 @@
+{
+  "version": "2.0.0",
+  "guidelines": [
+    {
+      "id": "G-H01-001",
+      "category_id": "H01",
+      "text": "Wipe liquid spills and water puddles immediately using an absorbent cloth or dry mop.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H01-002",
+      "category_id": "H01",
+      "text": "Place non-skid rubber-backed mats at sink, bathtub, and exterior doorway transitions.",
+      "priority": 2,
+      "applies_to": ["child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H01-003",
+      "category_id": "H01",
+      "text": "Apply anti-slip adhesive tread strips or slip-resistant treatments to polished stone and wet bathroom tiles.",
+      "priority": 2,
+      "applies_to": ["elderly", "adult"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H01-004",
+      "category_id": "H01",
+      "text": "Keep infants and elderly relatives away from wet or freshly mopped surfaces until thoroughly dried.",
+      "priority": 1,
+      "applies_to": ["baby", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H02-001",
+      "category_id": "H02",
+      "text": "Fasten trailing electrical cables along walls or baseboards using adhesive cord clips or protective raceways.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H02-002",
+      "category_id": "H02",
+      "text": "Clear walking corridors, hallways, and stairs of footwear, cardboard boxes, and loose clutter.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H02-003",
+      "category_id": "H02",
+      "text": "Secure area rug perimeters with double-sided rug tape or transition grips to eliminate raised curled edges.",
+      "priority": 2,
+      "applies_to": ["elderly", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H02-004",
+      "category_id": "H02",
+      "text": "Store children's toys in low floor bins away from main walking lines immediately following play.",
+      "priority": 2,
+      "applies_to": ["baby", "child", "adult"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H03-001",
+      "category_id": "H03",
+      "text": "Disconnect and replace damaged, pinched, or frayed power cords without attempting temporary tape repairs.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H03-002",
+      "category_id": "H03",
+      "text": "Relocate power strips, chargers, and extension cords away from sinks, basins, and moisture sources.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H03-003",
+      "category_id": "H03",
+      "text": "Insert protective plastic safety caps or sliding tamper-resistant covers into all unused low wall outlets.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H03-004",
+      "category_id": "H03",
+      "text": "Avoid daisy-chaining multi-socket adapters; distribute high-draw heating or cooling appliances across separate branch circuits.",
+      "priority": 2,
+      "applies_to": ["adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H04-001",
+      "category_id": "H04",
+      "text": "Turn cookware and pan handles inward toward the rear of the stovetop to prevent accidental snagging or tipping.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H04-002",
+      "category_id": "H04",
+      "text": "Maintain at least 1 metre (3 feet) of open clearance between portable space heaters and curtains, bedding, or upholstery.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H04-003",
+      "category_id": "H04",
+      "text": "Store matches, utility lighters, and hot appliances out of reach of children in elevated, latched locations.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H04-004",
+      "category_id": "H04",
+      "text": "Turn off heating appliances, stoves, and irons immediately when stepping away from the area.",
+      "priority": 1,
+      "applies_to": ["adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H04-005",
+      "category_id": "H04",
+      "text": "For grease or oil cooking pan flare-ups, slide a tight metal lid over the pan and switch off heat; never pour water.",
+      "priority": 1,
+      "applies_to": ["adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": ["G-H04-006"],
+      "source_note": null
+    },
+    {
+      "id": "G-H04-006",
+      "category_id": "H04",
+      "text": "For small burning paper or textile fires, extinguish using plenty of water or a multipurpose extinguisher.",
+      "priority": 2,
+      "applies_to": ["adult"],
+      "provenance": "guideline",
+      "conflicts_with": ["G-H04-005"],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H05-001",
+      "category_id": "H05",
+      "text": "Store culinary knives, shears, and razor blades in a wall-mounted magnetic rack, knife block, or latched drawer.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H05-002",
+      "category_id": "H05",
+      "text": "Collect broken glassware fragments using a broom and dustpan, followed by a damp paper towel to pick up micro-splinters.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H05-003",
+      "category_id": "H05",
+      "text": "Push food preparation cutting boards and sharp cutlery well back from countertop perimeters away from toddler reach.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H05-004",
+      "category_id": "H05",
+      "text": "Wrap spent razor blades or sharp glass shards in rigid cardboard before placing them in the disposal bin.",
+      "priority": 2,
+      "applies_to": ["adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H06-001",
+      "category_id": "H06",
+      "text": "Mount hardware-secured safety barrier gates at both the summit and base of interior staircases.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H06-002",
+      "category_id": "H06",
+      "text": "Engage window sash restrictors to ensure residential window openings cannot exceed 10 centimetres (4 inches).",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H06-003",
+      "category_id": "H06",
+      "text": "Install continuous, solidly anchored handrails spanning the entire vertical run on both sides of stairways.",
+      "priority": 2,
+      "applies_to": ["elderly", "adult", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H06-004",
+      "category_id": "H06",
+      "text": "Move chairs, ottomans, and climbable furniture away from balcony perimeters and open windows.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H07-001",
+      "category_id": "H07",
+      "text": "Anchor tall bookcases, dressers, and storage wardrobes directly into wall studs using anti-tip bracket straps.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H07-002",
+      "category_id": "H07",
+      "text": "Mount flat-screen televisions securely to wall studs or secure them with anti-tip straps to broad, low media furniture.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H07-003",
+      "category_id": "H07",
+      "text": "Arrange storage weight distribution so heavy books and boxes occupy the lowest shelves to preserve stability.",
+      "priority": 2,
+      "applies_to": ["adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H07-004",
+      "category_id": "H07",
+      "text": "Remove desirable toys, remote controls, or sweets from upper furniture tops to discourage climbing behavior.",
+      "priority": 2,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H08-001",
+      "category_id": "H08",
+      "text": "Store domestic chemical cleaners, bleach, and detergents in elevated cabinets secured with child-resistant latches.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H08-002",
+      "category_id": "H08",
+      "text": "Retain pharmaceuticals in their original labeled child-resistant containers within a locked medicine cabinet.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H08-003",
+      "category_id": "H08",
+      "text": "Never decant chemical solvents, kerosene, or cleaning mixtures into unlabelled beverage bottles or drink containers.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H08-004",
+      "category_id": "H08",
+      "text": "Program regional poison information hotline numbers into mobile speed-dial and post conspicuously near exits.",
+      "priority": 2,
+      "applies_to": ["adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H09-001",
+      "category_id": "H09",
+      "text": "Collect and store coins, button batteries, pins, and small objects under 3 cm well outside infant and toddler reach.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H09-002",
+      "category_id": "H09",
+      "text": "Ensure electronic gadgets and toy battery compartments are secured with screwed closures to prevent battery release.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H09-003",
+      "category_id": "H09",
+      "text": "Inspect plush and plastic toys regularly for loose eyes, detached buttons, or split seams.",
+      "priority": 2,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H09-004",
+      "category_id": "H09",
+      "text": "Dispose of burst balloons and brittle broken plastic fragments immediately upon detection.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H10-001",
+      "category_id": "H10",
+      "text": "Empty standing water from washing buckets, plastic tubs, and utility basins immediately after finishing tasks.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H10-002",
+      "category_id": "H10",
+      "text": "Maintain uninterrupted direct visual contact with infants and toddlers whenever they are near bathtubs or water receptacles.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H10-003",
+      "category_id": "H10",
+      "text": "Fasten rigid, weight-bearing, padlocked covers over underground sumps, storage wells, and rainwater harvesting cisterns.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H10-004",
+      "category_id": "H10",
+      "text": "Keep bathroom and laundry facility doors shut and fitted with child-resistant exterior latch closures.",
+      "priority": 2,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H11-001",
+      "category_id": "H11",
+      "text": "Install safety cleats at least 1.5 metres above the floor to wrap and secure loose window blind pull cords.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H11-002",
+      "category_id": "H11",
+      "text": "Position infant cribs, playpens, and toddler beds well away from window treatments, curtain cords, and appliance wires.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H11-003",
+      "category_id": "H11",
+      "text": "Tie plastic packaging bags into tight knots and dispose of them promptly outside child reach.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H11-004",
+      "category_id": "H11",
+      "text": "Verify that crib vertical slats and stair rail balusters have gaps no wider than 6 centimetres (2.3 inches).",
+      "priority": 2,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H12-001",
+      "category_id": "H12",
+      "text": "Restrict access beneath areas of loose ceiling plaster, structural fractures, or unstable overhead elements.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H12-002",
+      "category_id": "H12",
+      "text": "Arrange for a qualified structural engineer or licensed contractor to assess severe masonry wall or beam cracks.",
+      "priority": 2,
+      "applies_to": ["adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H12-003",
+      "category_id": "H12",
+      "text": "Repair pipe leakages and scrub active black mould growth using detergent solutions while wearing protective respirators.",
+      "priority": 2,
+      "applies_to": ["adult"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H12-004",
+      "category_id": "H12",
+      "text": "Fasten or replace loose banisters, rotting floorboards, or detached floor threshold transition strips.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H13-001",
+      "category_id": "H13",
+      "text": "Install bright, even, glare-free illumination along stairways, dark corridors, and entry thresholds.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H13-002",
+      "category_id": "H13",
+      "text": "Plug automatic motion-activated nightlights into wall sockets along bedroom-to-bathroom nocturnal walking routes.",
+      "priority": 2,
+      "applies_to": ["elderly", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H13-003",
+      "category_id": "H13",
+      "text": "Replace expired bulbs immediately and ensure two-way light switches are accessible at both stair top and landing.",
+      "priority": 1,
+      "applies_to": ["adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H13-004",
+      "category_id": "H13",
+      "text": "Apply high-contrast visual edge striping along stair tread edges to assist depth discernment in shadowed zones.",
+      "priority": 2,
+      "applies_to": ["elderly", "adult"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H14-001",
+      "category_id": "H14",
+      "text": "Keep residential perimeter gates and driveway barriers latched to prevent uncontrolled child access to roadways.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H14-002",
+      "category_id": "H14",
+      "text": "Level sunken paving slabs, fill potholes along walkways, and clearly mark irregular exterior steps.",
+      "priority": 2,
+      "applies_to": ["elderly", "adult"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H14-003",
+      "category_id": "H14",
+      "text": "Report low-hanging, damaged, or sagging exterior utility cables to local authorities without attempting contact.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H14-004",
+      "category_id": "H14",
+      "text": "Ensure children wear reflective apparel and maintain firm hand-holding with adults when walking near vehicle thoroughfares.",
+      "priority": 1,
+      "applies_to": ["baby", "child"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+
+    {
+      "id": "G-H15-001",
+      "category_id": "H15",
+      "text": "Isolate the observed unusual physical anomaly and restrict access by vulnerable occupants until assessed.",
+      "priority": 1,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H15-002",
+      "category_id": "H15",
+      "text": "Inspect the item from a prudent physical distance to establish whether specialised technical evaluation is required.",
+      "priority": 2,
+      "applies_to": ["adult", "elderly"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    },
+    {
+      "id": "G-H15-003",
+      "category_id": "H15",
+      "text": "Consult manufacturer specifications or local safety codes if the unfamiliar equipment or hazard cannot be readily resolved.",
+      "priority": 3,
+      "applies_to": ["adult"],
+      "provenance": "guideline",
+      "conflicts_with": [],
+      "source_note": null
+    }
+  ],
+  "generic_fallbacks": {
+    "H01": {
+      "id": "GEN-H01",
+      "category_id": "H01",
+      "text": "Dry or clean slippery walking surfaces and proceed with caution across the area.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H02": {
+      "id": "GEN-H02",
+      "category_id": "H02",
+      "text": "Remove obstacles, clutter, and loose trailing wires from primary walking routes.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H03": {
+      "id": "GEN-H03",
+      "category_id": "H03",
+      "text": "Disconnect unshielded or damp electrical equipment and avoid contacting exposed wiring.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H04": {
+      "id": "GEN-H04",
+      "category_id": "H04",
+      "text": "Extinguish open flames, switch off unattended heat appliances, and isolate combustibles.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H05": {
+      "id": "GEN-H05",
+      "category_id": "H05",
+      "text": "Place exposed blades or glass fragments into secure containers away from reach.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H06": {
+      "id": "GEN-H06",
+      "category_id": "H06",
+      "text": "Maintain physical distance from elevated edges and install protective barriers where drops exist.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H07": {
+      "id": "GEN-H07",
+      "category_id": "H07",
+      "text": "Stabilize or anchor tall, top-heavy furniture and remove stacked items from high perches.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H08": {
+      "id": "GEN-H08",
+      "category_id": "H08",
+      "text": "Lock chemicals and pharmaceutical products in elevated storage inaccessible to children.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H09": {
+      "id": "GEN-H09",
+      "category_id": "H09",
+      "text": "Store small loose parts, coins, and button batteries in sealed, out-of-reach containers.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H10": {
+      "id": "GEN-H10",
+      "category_id": "H10",
+      "text": "Drain open standing water vessels and fit secure covers onto water cisterns.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H11": {
+      "id": "GEN-H11",
+      "category_id": "H11",
+      "text": "Wrap hanging cord loops high on wall cleats and discard thin plastic wrappers.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H12": {
+      "id": "GEN-H12",
+      "category_id": "H12",
+      "text": "Cordon off structurally damaged elements and schedule professional building repairs.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H13": {
+      "id": "GEN-H13",
+      "category_id": "H13",
+      "text": "Improve area illumination with suitable lighting fixtures to remove shadows and glare.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H14": {
+      "id": "GEN-H14",
+      "category_id": "H14",
+      "text": "Latch perimeter gates and watch for road traffic and ground depressions when walking outdoors.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    },
+    "H15": {
+      "id": "GEN-H15",
+      "category_id": "H15",
+      "text": "Keep individuals away from the unclassified anomaly and conduct a careful manual inspection.",
+      "priority": 99,
+      "applies_to": ["baby", "child", "adult", "elderly"],
+      "provenance": "generic",
+      "conflicts_with": []
+    }
+  },
+  "universal_fallback": {
+    "id": "GEN-UNIVERSAL-001",
+    "category_id": "universal",
+    "text": "Keep people away from the hazard area, isolate or remove the hazard if feasible without risk, and consult a qualified technician if required.",
+    "priority": 100,
+    "applies_to": ["baby", "child", "adult", "elderly"],
+    "provenance": "generic",
+    "conflicts_with": []
+  }
+}

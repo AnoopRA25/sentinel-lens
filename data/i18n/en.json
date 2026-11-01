@@ -1,0 +1,184 @@
+{
+  "language": "en",
+  "language_name": "English",
+  "native_language_name": "English",
+  "categories": {
+    "H01": {
+      "id": "H01",
+      "name": "slip_wet",
+      "title": "Slip & Wet Floor",
+      "description": "Liquid spills, damp or polished floor surfaces, soap residue, or loose mats creating loss of traction on walking paths."
+    },
+    "H02": {
+      "id": "H02",
+      "name": "trip_clutter",
+      "title": "Trip & Walkway Clutter",
+      "description": "Objects, trailing cables, clutter in primary walking paths, or uneven floor transitions that can cause stumbles."
+    },
+    "H03": {
+      "id": "H03",
+      "name": "electrical",
+      "title": "Electrical Hazard",
+      "description": "Exposed electrical wiring, damaged insulation, overloaded power strips, sockets near moisture, or uncovered wall outlets."
+    },
+    "H04": {
+      "id": "H04",
+      "name": "fire_heat",
+      "title": "Fire & Heat Hazard",
+      "description": "Open flames, hot stovetops or cookware, space heaters, hot liquids, combustible materials near heat sources, or gas cylinder issues."
+    },
+    "H05": {
+      "id": "H05",
+      "name": "sharp_glass",
+      "title": "Sharp Objects & Glass",
+      "description": "Unsheathed knives, broken glass or ceramics, razor blades, sharp metal edges, or uncovered cutting tools."
+    },
+    "H06": {
+      "id": "H06",
+      "name": "fall_height",
+      "title": "Fall from Height",
+      "description": "Unguarded stairs, open balcony or window ledges, ladders, raised platforms, open drains, or steep drops without barriers."
+    },
+    "H07": {
+      "id": "H07",
+      "name": "unstable_falling",
+      "title": "Unstable & Falling Objects",
+      "description": "Tall unanchored furniture, televisions on unstable or narrow stands, heavy items stacked on high shelves, or insecure hanging fixtures."
+    },
+    "H08": {
+      "id": "H08",
+      "name": "chemical_poison",
+      "title": "Chemical & Poison Hazard",
+      "description": "Household cleaning chemicals, unsealed medicines, pesticides, detergents, alcohol, or corrosive fluids accessible within reach."
+    },
+    "H09": {
+      "id": "H09",
+      "name": "choking_small_objects",
+      "title": "Choking & Small Objects",
+      "description": "Loose coins, button batteries, small toy parts, beads, small magnetic items, or pebbles that pose choking hazards for young children."
+    },
+    "H10": {
+      "id": "H10",
+      "name": "water_drowning",
+      "title": "Water & Drowning Hazard",
+      "description": "Open buckets or tubs filled with water, uncovered storage tanks, filled bathtubs, paddling pools, or open drainage sumps."
+    },
+    "H11": {
+      "id": "H11",
+      "name": "strangulation_entrapment",
+      "title": "Strangulation & Entrapment",
+      "description": "Dangling blind or curtain cords, loose ropes, plastic bags, cords near cribs, or entrapment gaps in railings and furniture."
+    },
+    "H12": {
+      "id": "H12",
+      "name": "structural_damage",
+      "title": "Structural Damage",
+      "description": "Cracks in walls or ceilings, spalling or hanging plaster, severe damp or mould patches, broken railing, or loose architectural elements."
+    },
+    "H13": {
+      "id": "H13",
+      "name": "poor_visibility",
+      "title": "Poor Visibility & Glare",
+      "description": "Inadequate illumination on stairs or hallways, blinding glare, shadows obscuring hazards, or obstructed lines of sight."
+    },
+    "H14": {
+      "id": "H14",
+      "name": "outdoor_traffic_terrain",
+      "title": "Outdoor Traffic & Terrain",
+      "description": "Vehicle traffic proximity, open gates near roadway, potholes, broken sidewalks, steep slippery slopes, or exposed utility wiring outdoors."
+    },
+    "H15": {
+      "id": "H15",
+      "name": "other_observable",
+      "title": "Other Observable Hazard",
+      "description": "Physical hazards directly visible in the scene that do not clearly fit into categories H01 through H14; classified with uncertain status."
+    }
+  },
+  "risk_levels": {
+    "low": {
+      "label": "Low",
+      "description": "Minor physical injury unlikely or easily avoided."
+    },
+    "medium": {
+      "label": "Medium",
+      "description": "Noticeable injury potential requiring precaution."
+    },
+    "high": {
+      "label": "High",
+      "description": "Substantial risk of severe injury requiring urgent mitigation."
+    },
+    "uncertain": {
+      "label": "Check this",
+      "description": "Potential hazard requiring visual confirmation or closer inspection."
+    }
+  },
+  "hazard_status": {
+    "observed": "Observed",
+    "likely": "Likely",
+    "possible": "Check this (Possible)"
+  },
+  "evidence_strength": {
+    "clear": "Clear evidence",
+    "partial": "Partial evidence",
+    "weak": "Weak / unconfirmed evidence"
+  },
+  "person_categories": {
+    "baby": "Baby (0-12 months)",
+    "child": "Child (1-12 years)",
+    "adult": "Adult",
+    "elderly": "Elderly relative"
+  },
+  "outcomes": {
+    "hazards_found": "Hazards found",
+    "none_observed": "No hazards observed in this view",
+    "inconclusive": "Inconclusive assessment",
+    "failed": "Analysis did not complete"
+  },
+  "verify_status": {
+    "passed": "Passed verification",
+    "passed_with_changes": "Passed with adjustments",
+    "failed_fallback": "Reduced confidence (fallback)"
+  },
+  "notify_status": {
+    "sent": "Caregiver alert sent",
+    "skipped_cooldown": "Alert skipped (cooldown active)",
+    "skipped_policy": "Alert skipped (policy threshold)",
+    "disabled": "Caregiver alert disabled",
+    "failed": "Caregiver alert failed to send"
+  },
+  "ui_messages": {
+    "app_title": "Sentinel Lens",
+    "take_photo": "Take photo",
+    "scan_room": "Scan room",
+    "stop_camera": "Stop camera",
+    "pause_monitoring": "Pause monitoring",
+    "resume_monitoring": "Resume monitoring",
+    "analyze": "Analyze",
+    "analyzing": "Analyzing...",
+    "retake": "Retake",
+    "analyze_anyway": "Analyze anyway",
+    "try_again": "Try again",
+    "save": "Save",
+    "share_print": "Share / Print",
+    "re_scan": "Re-scan",
+    "confirmed_hazards": "{count} confirmed",
+    "hazards_to_check": "{count} to check",
+    "empty_state_msg": "No scan yet. Take a photo of the area you want to check.",
+    "camera_permission_denied": "Camera access is blocked. Allow the camera in your browser settings, or use Photo mode.",
+    "insecure_context": "Live mode needs a secure (HTTPS) connection. Photo and Video modes still work. See Settings, Phone access.",
+    "too_dark_hint": "Too dark to check reliably. Turn on a light or move closer to a window.",
+    "none_observed_msg": "No hazards observed in this view. Parts of the room weren't visible. Scan from another angle.",
+    "failed_msg": "Analysis didn't complete, so this is not an evaluated result. Check your connection and try again.",
+    "rate_limited_msg": "Analysis is rate-limited. Slowing down. Next check in {seconds} s.",
+    "translation_failed_msg": "Couldn't translate this report. Showing English.",
+    "video_sampling_disclaimer": "Checks one frame every {seconds} s. Events between frames can be missed.",
+    "emergency_banner": "Possible fire or exposed live wiring visible. Move people away and call your local emergency number.",
+    "footer_limits": "This report is based on the image(s) analyzed and does not guarantee safety. It cannot assess anything outside the frame.",
+    "worth_checking_heading": "Worth checking (Potential)",
+    "confirmed_heading": "Confirmed Hazards",
+    "coverage_and_limits": "Coverage and limits",
+    "precautions_heading": "Precautions",
+    "provenance_guideline": "Guideline",
+    "provenance_generic": "General Advice"
+  }
+}

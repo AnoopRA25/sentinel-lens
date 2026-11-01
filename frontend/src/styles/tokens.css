@@ -1,0 +1,243 @@
+:root {
+  /* Terminal Ember Canonical Palette (terminal-ember-design.md) */
+  --ember-bg: #181818;
+  --ember-surface: #252422;
+  --ember-surface-deep: #030302;
+  --ember-border: #151513;
+  --ember-accent: #FF6542;
+  --ember-accent-border: #FF6543;
+  --ember-cream: #FBFAF9;
+  --ember-ink: #0C0B09;
+  --ember-muted: #898580;
+  --ember-dark-solid: #353431;
+
+  /* Backward-compatible variables */
+  --ink-900: #181818;
+  --ink-800: #252422;
+  --ink-700: #353431;
+  --mist-100: #FBFAF9;
+  --mist-400: #898580;
+  --signal-cyan: #FF6542;
+  --risk-high: #FF6542;
+  --risk-medium: #F5A524;
+  --risk-low: #7FA7D6;
+  --risk-uncertain: #898580;
+}
+
+/* Terminal Ember Background Radial Glow (Hero central bloom) */
+.hero-ember-glow {
+  background: radial-gradient(at 50% 0%, rgba(255, 101, 66, 0.14) 0%, rgba(0, 0, 0, 0) 30%);
+}
+
+/* Conic Rim Light Glow ring behind hero disc */
+.conic-rim-light {
+  background: conic-gradient(
+    from 180deg,
+    rgba(255, 255, 255, 0.03) -63.87deg,
+    rgba(255, 255, 255, 0.03) 75.05deg,
+    rgba(255, 101, 66, 0.7) 91.39deg,
+    rgba(255, 255, 255, 0.03) 105.97deg,
+    rgba(255, 255, 255, 0.05) 244.6deg,
+    rgba(255, 255, 255, 0.2) 269.37deg,
+    rgba(255, 255, 255, 0.03) 296.13deg,
+    rgba(255, 255, 255, 0.03) 435.05deg
+  );
+}
+
+/* Repeating 1px scanline grain texture */
+.scanline-texture {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(3, 3, 2, 0.85) 0px,
+    rgba(3, 3, 2, 0.85) 1px,
+    rgba(3, 3, 2, 0) 1px,
+    rgba(3, 3, 2, 0) 2px
+  );
+}
+
+/* Component Buttons per terminal-ember-design.md §Components */
+.btn-hero-primary {
+  background-color: #FBFAF9;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(53, 52, 49, 0.06) 100%);
+  color: #353431;
+  border-radius: 9999px;
+  height: 36px;
+  padding: 0 20px 0 16px;
+  font-family: "Geist Mono", monospace;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+.btn-hero-primary:hover {
+  background-color: #FBF9F9;
+  transform: translateY(-1px);
+}
+
+.btn-nav-cta {
+  background-color: #FF6542;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.08) 100%);
+  color: #FFFFFF;
+  border-radius: 9999px;
+  height: 32px;
+  padding: 0 16px;
+  font-family: "Geist Mono", monospace;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 14px -2px rgba(255, 101, 66, 0.4);
+}
+.btn-nav-cta:hover {
+  filter: brightness(1.08);
+}
+
+.btn-dark-solid {
+  background-color: #353431;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
+  color: #FBFAF9;
+  border-radius: 9999px;
+  height: 32px;
+  padding: 0 16px;
+  font-family: "Geist Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #151513;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-dark-solid:hover {
+  background-color: #151513;
+  color: #FFFFFF;
+}
+
+.btn-secondary-square {
+  background-color: #FBFAF9;
+  color: #353431;
+  border-radius: 8px;
+  height: 32px;
+  padding: 0 12px;
+  font-family: "Geist Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #e5e3df;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-secondary-square:hover {
+  background-color: #FBF9F9;
+}
+
+/* Kalam Handwritten Script for diagram annotation callouts */
+.font-script {
+  font-family: "Kalam", cursive;
+  font-style: italic;
+}
+
+/* Card Tab Panel */
+.card-tab-panel {
+  background-color: #252422;
+  border-radius: 12px;
+  border: 1px solid #151513;
+  box-shadow: 0 4px 20px -2px rgba(3, 3, 2, 0.6);
+}
+
+/* Light Editorial Paper Card (Founder Note Card role) */
+.card-note-cream {
+  background-color: #FBFAF9;
+  color: #0C0B09;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Full Bleed Coral Footer Band */
+.footer-coral-band {
+  background-color: #FF6542;
+  color: #FFFFFF;
+}
+
+/* Diagonal hatch pattern for uncertain risk */
+.hatch-pattern {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(137, 133, 128, 0.15),
+    rgba(137, 133, 128, 0.15) 6px,
+    rgba(137, 133, 128, 0.3) 6px,
+    rgba(137, 133, 128, 0.3) 12px
+  );
+}
+
+.hatch-border {
+  border-style: dashed;
+  border-color: #898580;
+}
+
+/* Indic script line height enhancements */
+:lang(kn), :lang(hi) {
+  line-height: 1.65;
+}
+
+/* Safe area insets for mobile */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 16px);
+}
+
+@keyframes scan {
+  0% {
+    top: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0.8;
+  }
+}
+
+.pattern-diagonal-hatch {
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--risk-uncertain) 0,
+    var(--risk-uncertain) 3px,
+    transparent 3px,
+    transparent 6px
+  );
+}
+
+.border-hatch-uncertain {
+  border-image: repeating-linear-gradient(
+    -45deg,
+    var(--risk-uncertain),
+    var(--risk-uncertain) 4px,
+    transparent 4px,
+    transparent 8px
+  ) 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--ember-accent);
+  outline-offset: 2px;
+}

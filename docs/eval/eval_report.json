@@ -1,0 +1,377 @@
+{
+  "dataset_name": "Hazard Precaution Advisor v2 Annotated Evaluation Fixtures",
+  "dataset_size": 17,
+  "disclaimer": "Measured on this small dataset only.",
+  "evaluated_at": "2026-11-01 14:52:05Z",
+  "mode": "offline_benchmark",
+  "overall_metrics": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "false_safe_rate": 0.0,
+    "failure_rate": 0.0,
+    "outcome_accuracy": 1.0
+  },
+  "latency_ms": {
+    "mean": 28.33,
+    "median": 28.03,
+    "p95": 39.81,
+    "min": 24.67,
+    "max": 39.81
+  },
+  "per_category_metrics": {
+    "H01": {
+      "true_positives": 2,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "H02": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "H03": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "H04": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "H06": {
+      "true_positives": 2,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "H07": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "H09": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "H11": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "H13": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "H14": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "precision": 1.0
+    }
+  },
+  "results": [
+    {
+      "fixture_id": "kitchen_01_spill",
+      "filename": "kitchen_spill.jpg",
+      "environment": "kitchen",
+      "expected_categories": [
+        "H01"
+      ],
+      "detected_categories": [
+        "H01"
+      ],
+      "expected_outcome": "hazards_found",
+      "actual_outcome": "hazards_found",
+      "latency_ms": 39.81,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "kitchen_02_power_strip",
+      "filename": "kitchen_power_strip_sink.jpg",
+      "environment": "kitchen",
+      "expected_categories": [
+        "H03"
+      ],
+      "detected_categories": [
+        "H03"
+      ],
+      "expected_outcome": "hazards_found",
+      "actual_outcome": "hazards_found",
+      "latency_ms": 29.8,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "kitchen_03_flame_towel",
+      "filename": "kitchen_flame_towel.jpg",
+      "environment": "kitchen",
+      "expected_categories": [
+        "H04"
+      ],
+      "detected_categories": [
+        "H04"
+      ],
+      "expected_outcome": "hazards_found",
+      "actual_outcome": "hazards_found",
+      "latency_ms": 27.0,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "kitchen_04_clean",
+      "filename": "kitchen_clean.jpg",
+      "environment": "kitchen",
+      "expected_categories": [],
+      "detected_categories": [],
+      "expected_outcome": "none_observed",
+      "actual_outcome": "none_observed",
+      "latency_ms": 26.46,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "bathroom_01_wet_floor",
+      "filename": "bathroom_wet_floor.jpg",
+      "environment": "bathroom",
+      "expected_categories": [
+        "H01"
+      ],
+      "detected_categories": [
+        "H01"
+      ],
+      "expected_outcome": "hazards_found",
+      "actual_outcome": "hazards_found",
+      "latency_ms": 26.55,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "bathroom_02_clean",
+      "filename": "bathroom_clean.jpg",
+      "environment": "bathroom",
+      "expected_categories": [],
+      "detected_categories": [],
+      "expected_outcome": "none_observed",
+      "actual_outcome": "none_observed",
+      "latency_ms": 27.22,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "stairs_01_clutter_cables",
+      "filename": "stairs_clutter_cables.jpg",
+      "environment": "stairs",
+      "expected_categories": [
+        "H02",
+        "H06"
+      ],
+      "detected_categories": [
+        "H02",
+        "H06"
+      ],
+      "expected_outcome": "hazards_found",
+      "actual_outcome": "hazards_found",
+      "latency_ms": 28.29,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "stairs_02_dark",
+      "filename": "stairs_dark.jpg",
+      "environment": "stairs",
+      "expected_categories": [
+        "H06",
+        "H13"
+      ],
+      "detected_categories": [
+        "H06",
+        "H13"
+      ],
+      "expected_outcome": "hazards_found",
+      "actual_outcome": "hazards_found",
+      "latency_ms": 28.25,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "stairs_03_clear",
+      "filename": "stairs_clear.jpg",
+      "environment": "stairs",
+      "expected_categories": [],
+      "detected_categories": [],
+      "expected_outcome": "none_observed",
+      "actual_outcome": "none_observed",
+      "latency_ms": 29.22,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "bedroom_01_cord_crib",
+      "filename": "bedroom_cord_crib.jpg",
+      "environment": "bedroom",
+      "expected_categories": [
+        "H11"
+      ],
+      "detected_categories": [
+        "H11"
+      ],
+      "expected_outcome": "hazards_found",
+      "actual_outcome": "hazards_found",
+      "latency_ms": 26.96,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "bedroom_02_tall_bookcase",
+      "filename": "bedroom_tall_bookcase.jpg",
+      "environment": "bedroom",
+      "expected_categories": [
+        "H07"
+      ],
+      "detected_categories": [
+        "H07"
+      ],
+      "expected_outcome": "hazards_found",
+      "actual_outcome": "hazards_found",
+      "latency_ms": 28.16,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "bedroom_03_clean",
+      "filename": "bedroom_clean.jpg",
+      "environment": "bedroom",
+      "expected_categories": [],
+      "detected_categories": [],
+      "expected_outcome": "none_observed",
+      "actual_outcome": "none_observed",
+      "latency_ms": 26.76,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "baby_01_coins_magnets",
+      "filename": "baby_coins_floor.jpg",
+      "environment": "baby_corner",
+      "expected_categories": [
+        "H09"
+      ],
+      "detected_categories": [
+        "H09"
+      ],
+      "expected_outcome": "hazards_found",
+      "actual_outcome": "hazards_found",
+      "latency_ms": 28.03,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "baby_02_clean",
+      "filename": "baby_clean.jpg",
+      "environment": "baby_corner",
+      "expected_categories": [],
+      "detected_categories": [],
+      "expected_outcome": "none_observed",
+      "actual_outcome": "none_observed",
+      "latency_ms": 27.9,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "outdoor_01_pothole_traffic",
+      "filename": "outdoor_pothole.jpg",
+      "environment": "outdoor",
+      "expected_categories": [
+        "H14"
+      ],
+      "detected_categories": [
+        "H14"
+      ],
+      "expected_outcome": "hazards_found",
+      "actual_outcome": "hazards_found",
+      "latency_ms": 28.33,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "outdoor_02_clean",
+      "filename": "outdoor_clean.jpg",
+      "environment": "outdoor",
+      "expected_categories": [],
+      "detected_categories": [],
+      "expected_outcome": "none_observed",
+      "actual_outcome": "none_observed",
+      "latency_ms": 28.14,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    },
+    {
+      "fixture_id": "corrupt_blurry_01",
+      "filename": "blurry_unusable.jpg",
+      "environment": "unknown",
+      "expected_categories": [],
+      "detected_categories": [],
+      "expected_outcome": "inconclusive",
+      "actual_outcome": "inconclusive",
+      "latency_ms": 24.67,
+      "is_false_safe": false,
+      "is_failure": false,
+      "is_correct_outcome": true,
+      "error": null
+    }
+  ]
+}

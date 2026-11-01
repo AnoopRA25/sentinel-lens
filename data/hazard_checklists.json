@@ -1,0 +1,394 @@
+{
+  "version": "2.0.0",
+  "environments": {
+    "kitchen": {
+      "environment": "kitchen",
+      "title": "Kitchen",
+      "description": "Cooking, food preparation, and washing area with heat, water, and electrical intersections.",
+      "category_ids": [
+        "H01",
+        "H03",
+        "H04",
+        "H05",
+        "H07",
+        "H08",
+        "H10"
+      ],
+      "queries": {
+        "H01": "Are there liquid spills, water puddles, cooking oil residue, or slippery wet patches on the floor?",
+        "H03": "Are electrical appliances, multi-socket strips, or power cords positioned near sinks, water basins, or displaying damaged insulation?",
+        "H04": "Is there an active flame, hot stovetop, hot liquid in reach, pan handle protruding over the edge, or combustible item near a burner?",
+        "H05": "Are kitchen knives, blades, shears, or breakable glassware resting near counter edges or accessible within reach?",
+        "H07": "Are there unanchored tall storage cabinets, overloaded high shelves, or heavy appliances on narrow surfaces?",
+        "H08": "Are cleaning chemicals, dishwashing detergents, oven cleaners, or toxic substances stored in unlatched lower cabinets or on counters?",
+        "H10": "Is there deep standing water in filled basins, blocked sinks, or large open buckets on the floor?"
+      },
+      "prompt_queries": [
+        {
+          "category_id": "H01",
+          "query": "Are there liquid spills, water puddles, cooking oil residue, or slippery wet patches on the floor?"
+        },
+        {
+          "category_id": "H03",
+          "query": "Are electrical appliances, multi-socket strips, or power cords positioned near sinks, water basins, or displaying damaged insulation?"
+        },
+        {
+          "category_id": "H04",
+          "query": "Is there an active flame, hot stovetop, hot liquid in reach, pan handle protruding over the edge, or combustible item near a burner?"
+        },
+        {
+          "category_id": "H05",
+          "query": "Are kitchen knives, blades, shears, or breakable glassware resting near counter edges or accessible within reach?"
+        },
+        {
+          "category_id": "H07",
+          "query": "Are there unanchored tall storage cabinets, overloaded high shelves, or heavy appliances on narrow surfaces?"
+        },
+        {
+          "category_id": "H08",
+          "query": "Are cleaning chemicals, dishwashing detergents, oven cleaners, or toxic substances stored in unlatched lower cabinets or on counters?"
+        },
+        {
+          "category_id": "H10",
+          "query": "Is there deep standing water in filled basins, blocked sinks, or large open buckets on the floor?"
+        }
+      ]
+    },
+    "bathroom": {
+      "environment": "bathroom",
+      "title": "Bathroom",
+      "description": "Personal hygiene area with slick surfaces, water accumulation, and wet-electrical risks.",
+      "category_ids": [
+        "H01",
+        "H03",
+        "H06",
+        "H08",
+        "H10",
+        "H11"
+      ],
+      "queries": {
+        "H01": "Are floor tiles wet, covered in soap residue, or lacking slip-resistant mats outside shower/tub zones?",
+        "H03": "Are plugged-in electrical devices (hair dryers, shavers, heaters) or unshielded outlets located near water sources?",
+        "H06": "Are there high slippery tub ledges, raised step transitions, or absence of grab rails?",
+        "H08": "Are prescription medicines, toilet cleaners, bleach, or grooming chemicals stored within low reach?",
+        "H10": "Is there standing water in an open bucket, basin, or filled bathtub left unattended?",
+        "H11": "Are there dangling loops, shower curtain cords, or plastic bags hanging at low height?"
+      },
+      "prompt_queries": [
+        {
+          "category_id": "H01",
+          "query": "Are floor tiles wet, covered in soap residue, or lacking slip-resistant mats outside shower/tub zones?"
+        },
+        {
+          "category_id": "H03",
+          "query": "Are plugged-in electrical devices (hair dryers, shavers, heaters) or unshielded outlets located near water sources?"
+        },
+        {
+          "category_id": "H06",
+          "query": "Are there high slippery tub ledges, raised step transitions, or absence of grab rails?"
+        },
+        {
+          "category_id": "H08",
+          "query": "Are prescription medicines, toilet cleaners, bleach, or grooming chemicals stored within low reach?"
+        },
+        {
+          "category_id": "H10",
+          "query": "Is there standing water in an open bucket, basin, or filled bathtub left unattended?"
+        },
+        {
+          "category_id": "H11",
+          "query": "Are there dangling loops, shower curtain cords, or plastic bags hanging at low height?"
+        }
+      ]
+    },
+    "bedroom": {
+      "environment": "bedroom",
+      "title": "Bedroom",
+      "description": "Sleeping, resting, and dressing area with furniture stability, clutter, and strangulation risks.",
+      "category_ids": [
+        "H02",
+        "H03",
+        "H07",
+        "H09",
+        "H11",
+        "H13"
+      ],
+      "queries": {
+        "H02": "Are walkways between bed, wardrobe, and door obstructed by loose clothing, cables, shoes, or clutter?",
+        "H03": "Are phone chargers left on bedding, power cords pinched under furniture, or multi-strips overloaded?",
+        "H07": "Are tall dressers, wardrobes, or TVs unanchored and prone to tipping over if pulled or climbed?",
+        "H09": "Are small loose items such as coins, button batteries, jewellery, or tiny parts on nightstands or floor?",
+        "H11": "Are window blind pull cords, drape ties, or plastic bags located within reach of beds or cribs?",
+        "H13": "Is the pathway from bed to exit or bathroom dark or lacking illuminated switches / nightlights?"
+      },
+      "prompt_queries": [
+        {
+          "category_id": "H02",
+          "query": "Are walkways between bed, wardrobe, and door obstructed by loose clothing, cables, shoes, or clutter?"
+        },
+        {
+          "category_id": "H03",
+          "query": "Are phone chargers left on bedding, power cords pinched under furniture, or multi-strips overloaded?"
+        },
+        {
+          "category_id": "H07",
+          "query": "Are tall dressers, wardrobes, or TVs unanchored and prone to tipping over if pulled or climbed?"
+        },
+        {
+          "category_id": "H09",
+          "query": "Are small loose items such as coins, button batteries, jewellery, or tiny parts on nightstands or floor?"
+        },
+        {
+          "category_id": "H11",
+          "query": "Are window blind pull cords, drape ties, or plastic bags located within reach of beds or cribs?"
+        },
+        {
+          "category_id": "H13",
+          "query": "Is the pathway from bed to exit or bathroom dark or lacking illuminated switches / nightlights?"
+        }
+      ]
+    },
+    "living_room": {
+      "environment": "living_room",
+      "title": "Living Room",
+      "description": "Common gathering, entertainment, and relaxation area with traffic paths and shared objects.",
+      "category_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04",
+        "H07",
+        "H09",
+        "H11"
+      ],
+      "queries": {
+        "H01": "Are there polished slippery floors or loose area rugs without non-slip backing?",
+        "H02": "Are extension cords running across walking paths, toys scattered, or low tables obstructing passage?",
+        "H03": "Are power strips tangled, sockets overloaded, or lamp cords exposed to foot traffic?",
+        "H04": "Are space heaters near curtains/sofas, burning candles unattended, or hot drinks on low coffee tables?",
+        "H07": "Is the television or tall display shelving unanchored or placed on an unstable stand?",
+        "H09": "Are remote control batteries, loose coins, or small decorative items within low reach?",
+        "H11": "Are window blind pull cords or looped electronics cords dangling within reach?"
+      },
+      "prompt_queries": [
+        {
+          "category_id": "H01",
+          "query": "Are there polished slippery floors or loose area rugs without non-slip backing?"
+        },
+        {
+          "category_id": "H02",
+          "query": "Are extension cords running across walking paths, toys scattered, or low tables obstructing passage?"
+        },
+        {
+          "category_id": "H03",
+          "query": "Are power strips tangled, sockets overloaded, or lamp cords exposed to foot traffic?"
+        },
+        {
+          "category_id": "H04",
+          "query": "Are space heaters near curtains/sofas, burning candles unattended, or hot drinks on low coffee tables?"
+        },
+        {
+          "category_id": "H07",
+          "query": "Is the television or tall display shelving unanchored or placed on an unstable stand?"
+        },
+        {
+          "category_id": "H09",
+          "query": "Are remote control batteries, loose coins, or small decorative items within low reach?"
+        },
+        {
+          "category_id": "H11",
+          "query": "Are window blind pull cords or looped electronics cords dangling within reach?"
+        }
+      ]
+    },
+    "stairs": {
+      "environment": "stairs",
+      "title": "Stairs & Steps",
+      "description": "Vertical elevation transitions with severe fall and visibility sensitivity.",
+      "category_ids": [
+        "H01",
+        "H02",
+        "H06",
+        "H12",
+        "H13"
+      ],
+      "queries": {
+        "H01": "Are stair treads wet, waxed, or covered in loose, unanchored stair carpet runners?",
+        "H02": "Are any items, footwear, laundry, toys, or trailing wires resting on steps or landings?",
+        "H06": "Is the staircase lacking a continuous handrail, or are there open railings with wide gaps or unguarded drops?",
+        "H12": "Are there cracked steps, loose tread boards, wobbly banister railings, or damaged nosing strips?",
+        "H13": "Is staircase lighting dim, casting heavy shadows, causing blinding glare, or lacking accessible switches?"
+      },
+      "prompt_queries": [
+        {
+          "category_id": "H01",
+          "query": "Are stair treads wet, waxed, or covered in loose, unanchored stair carpet runners?"
+        },
+        {
+          "category_id": "H02",
+          "query": "Are any items, footwear, laundry, toys, or trailing wires resting on steps or landings?"
+        },
+        {
+          "category_id": "H06",
+          "query": "Is the staircase lacking a continuous handrail, or are there open railings with wide gaps or unguarded drops?"
+        },
+        {
+          "category_id": "H12",
+          "query": "Are there cracked steps, loose tread boards, wobbly banister railings, or damaged nosing strips?"
+        },
+        {
+          "category_id": "H13",
+          "query": "Is staircase lighting dim, casting heavy shadows, causing blinding glare, or lacking accessible switches?"
+        }
+      ]
+    },
+    "outdoor": {
+      "environment": "outdoor",
+      "title": "Outdoor & Yard",
+      "description": "Exterior yard, patio, driveway, and perimeter areas with terrain and vehicular interactions.",
+      "category_ids": [
+        "H01",
+        "H04",
+        "H06",
+        "H08",
+        "H10",
+        "H14"
+      ],
+      "queries": {
+        "H01": "Are outdoor walkways, steps, or decks slick from rain, algae, mud, or loose gravel?",
+        "H04": "Are outdoor barbecue grills, fire pits, or fuel containers unattended or in close contact with dry vegetation?",
+        "H06": "Are there unguarded retaining walls, open pits, unshielded drains, steep drops, or unattended ladders?",
+        "H08": "Are gardening pesticides, fertilizers, weedkillers, or fuels stored in accessible, unsealed containers?",
+        "H10": "Is there an open water storage tank, uncovered garden pond, unprotected rain barrel, or pool?",
+        "H14": "Is there vehicular traffic nearby, an unlatched gate leading to the street, broken pavement, or exposed low-hanging utility wiring?"
+      },
+      "prompt_queries": [
+        {
+          "category_id": "H01",
+          "query": "Are outdoor walkways, steps, or decks slick from rain, algae, mud, or loose gravel?"
+        },
+        {
+          "category_id": "H04",
+          "query": "Are outdoor barbecue grills, fire pits, or fuel containers unattended or in close contact with dry vegetation?"
+        },
+        {
+          "category_id": "H06",
+          "query": "Are there unguarded retaining walls, open pits, unshielded drains, steep drops, or unattended ladders?"
+        },
+        {
+          "category_id": "H08",
+          "query": "Are gardening pesticides, fertilizers, weedkillers, or fuels stored in accessible, unsealed containers?"
+        },
+        {
+          "category_id": "H10",
+          "query": "Is there an open water storage tank, uncovered garden pond, unprotected rain barrel, or pool?"
+        },
+        {
+          "category_id": "H14",
+          "query": "Is there vehicular traffic nearby, an unlatched gate leading to the street, broken pavement, or exposed low-hanging utility wiring?"
+        }
+      ]
+    },
+    "unknown": {
+      "environment": "unknown",
+      "title": "Unknown / General Environment",
+      "description": "Unclassified or general environment sweeping all 15 hazard categories.",
+      "category_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04",
+        "H05",
+        "H06",
+        "H07",
+        "H08",
+        "H09",
+        "H10",
+        "H11",
+        "H12",
+        "H13",
+        "H14",
+        "H15"
+      ],
+      "queries": {
+        "H01": "Are there any liquid spills, puddles, grease, or slippery floor areas?",
+        "H02": "Are walkways or pathways obstructed by loose cables, clutter, or uneven thresholds?",
+        "H03": "Are there exposed wires, damaged cords, overloaded socket strips, or electrical fixtures near water?",
+        "H04": "Is there an active flame, hot surface, hot liquid, or combustible item near a heat source?",
+        "H05": "Are there exposed knives, razor blades, sharp metal edges, or broken glass?",
+        "H06": "Are there unguarded stairs, open window ledges, balcony drops, or unattended ladders?",
+        "H07": "Are there tall unanchored furniture units, wobbly stands, or heavy items on high shelves?",
+        "H08": "Are household chemicals, medicines, pesticides, or alcohol accessible within reach?",
+        "H09": "Are there small loose objects like coins, button batteries, beads, or small parts posing choking hazards?",
+        "H10": "Is there standing water in open buckets, tubs, unshielded pools, or tanks?",
+        "H11": "Are there looped cords, dangling blind cords, plastic bags, or entrapment gaps?",
+        "H12": "Are there visible wall/ceiling cracks, hanging plaster, damp patches, or damaged structural fixtures?",
+        "H13": "Is the lighting dim, shadowed, creating heavy glare, or obstructing clear sight lines?",
+        "H14": "Is there road/vehicle traffic proximity, potholes, uneven terrain, or outdoor utility wiring?",
+        "H15": "Are there any other visible physical hazards not captured by the categories above?"
+      },
+      "prompt_queries": [
+        {
+          "category_id": "H01",
+          "query": "Are there any liquid spills, puddles, grease, or slippery floor areas?"
+        },
+        {
+          "category_id": "H02",
+          "query": "Are walkways or pathways obstructed by loose cables, clutter, or uneven thresholds?"
+        },
+        {
+          "category_id": "H03",
+          "query": "Are there exposed wires, damaged cords, overloaded socket strips, or electrical fixtures near water?"
+        },
+        {
+          "category_id": "H04",
+          "query": "Is there an active flame, hot surface, hot liquid, or combustible item near a heat source?"
+        },
+        {
+          "category_id": "H05",
+          "query": "Are there exposed knives, razor blades, sharp metal edges, or broken glass?"
+        },
+        {
+          "category_id": "H06",
+          "query": "Are there unguarded stairs, open window ledges, balcony drops, or unattended ladders?"
+        },
+        {
+          "category_id": "H07",
+          "query": "Are there tall unanchored furniture units, wobbly stands, or heavy items on high shelves?"
+        },
+        {
+          "category_id": "H08",
+          "query": "Are household chemicals, medicines, pesticides, or alcohol accessible within reach?"
+        },
+        {
+          "category_id": "H09",
+          "query": "Are there small loose objects like coins, button batteries, beads, or small parts posing choking hazards?"
+        },
+        {
+          "category_id": "H10",
+          "query": "Is there standing water in open buckets, tubs, unshielded pools, or tanks?"
+        },
+        {
+          "category_id": "H11",
+          "query": "Are there looped cords, dangling blind cords, plastic bags, or entrapment gaps?"
+        },
+        {
+          "category_id": "H12",
+          "query": "Are there visible wall/ceiling cracks, hanging plaster, damp patches, or damaged structural fixtures?"
+        },
+        {
+          "category_id": "H13",
+          "query": "Is the lighting dim, shadowed, creating heavy glare, or obstructing clear sight lines?"
+        },
+        {
+          "category_id": "H14",
+          "query": "Is there road/vehicle traffic proximity, potholes, uneven terrain, or outdoor utility wiring?"
+        },
+        {
+          "category_id": "H15",
+          "query": "Are there any other visible physical hazards not captured by the categories above?"
+        }
+      ]
+    }
+  }
+}

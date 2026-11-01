@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Sentinel Lens v2 — Print & Multi-Page PDF Stylesheet
+   Conforms strictly to skills.md S-26, design.md §12, and A4 multi-page standards.
+   Ensures zero viewport truncation, multi-page page breaks, and full trilingual font fidelity.
+   ========================================================================== */
+
+/* Hidden on screen by default */
+.print-only {
+  display: none !important;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 10mm 12mm 10mm;
+  }
+
+  /* Unconstrain all root and viewport wrapper heights to allow full multi-page flow */
+  html,
+  body,
+  #root,
+  #root > div,
+  main,
+  .report-page,
+  .print-container,
+  .trilingual-report {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+    transform: none !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #0c0b09 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Kannada", "Noto Sans Devanagari", monospace, sans-serif !important;
+    font-size: 9.5pt !important;
+    line-height: 1.35 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide interactive screen UI elements */
+  .no-print,
+  nav,
+  header.hud-header,
+  .mode-dial,
+  button,
+  select,
+  input,
+  .cursor-pointer {
+    display: none !important;
+  }
+
+  /* Show dedicated print containers */
+  .print-only {
+    display: block !important;
+  }
+
+  /* Multi-page hazard card break rules: avoid clipping across page boundaries */
+  .hazard-card,
+  .print-card,
+  .card-print,
+  .trilingual-hazard-card {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 8mm !important;
+    border: 1px solid #d1d5db !important;
+    background-color: #ffffff !important;
+    color: #0c0b09 !important;
+    border-radius: 6px !important;
+  }
+
+  /* Prevent headings from being orphaned at the bottom of a page */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+    color: #0c0b09 !important;
+  }
+
+  /* Clean table and list breaks */
+  table, tr, td, th {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Page break utility classes */
+  .page-break-before {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+
+  .page-break-after {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  /* Ensure text inks are dark and links clean */
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+
+  /* Disclaimer footer styling */
+  .print-disclaimer {
+    border-top: 1px solid #9ca3af !important;
+    padding-top: 4mm !important;
+    margin-top: 6mm !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    font-size: 8pt !important;
+    color: #4b5563 !important;
+  }
+}

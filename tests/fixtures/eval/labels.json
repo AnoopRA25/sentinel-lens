@@ -1,0 +1,181 @@
+{
+  "version": "2.0.0",
+  "total_fixtures": 17,
+  "fixtures": [
+    {
+      "id": "kitchen_01_spill",
+      "filename": "kitchen_spill.jpg",
+      "environment": "kitchen",
+      "expected_categories": [
+        "H01"
+      ],
+      "expected_outcome": "hazards_found",
+      "person_category": "adult",
+      "description": "Kitchen tile floor with an oil/liquid spill creating a slip hazard"
+    },
+    {
+      "id": "kitchen_02_power_strip",
+      "filename": "kitchen_power_strip_sink.jpg",
+      "environment": "kitchen",
+      "expected_categories": [
+        "H03"
+      ],
+      "expected_outcome": "hazards_found",
+      "person_category": "child",
+      "description": "Power strip placed directly next to the kitchen sink basin"
+    },
+    {
+      "id": "kitchen_03_flame_towel",
+      "filename": "kitchen_flame_towel.jpg",
+      "environment": "kitchen",
+      "expected_categories": [
+        "H04"
+      ],
+      "expected_outcome": "hazards_found",
+      "person_category": "adult",
+      "description": "Kitchen burner with a dish towel hanging near open burner heat"
+    },
+    {
+      "id": "kitchen_04_clean",
+      "filename": "kitchen_clean.jpg",
+      "environment": "kitchen",
+      "expected_categories": [],
+      "expected_outcome": "none_observed",
+      "person_category": "adult",
+      "description": "Clean, well-lit kitchen counter and floor with no visible hazards"
+    },
+    {
+      "id": "bathroom_01_wet_floor",
+      "filename": "bathroom_wet_floor.jpg",
+      "environment": "bathroom",
+      "expected_categories": [
+        "H01"
+      ],
+      "expected_outcome": "hazards_found",
+      "person_category": "elderly",
+      "description": "Smooth bathroom tiles with soap residue and water puddle near tub"
+    },
+    {
+      "id": "bathroom_02_clean",
+      "filename": "bathroom_clean.jpg",
+      "environment": "bathroom",
+      "expected_categories": [],
+      "expected_outcome": "none_observed",
+      "person_category": "elderly",
+      "description": "Dry bathroom with secure non-slip mat and grab rails"
+    },
+    {
+      "id": "stairs_01_clutter_cables",
+      "filename": "stairs_clutter_cables.jpg",
+      "environment": "stairs",
+      "expected_categories": [
+        "H02",
+        "H06"
+      ],
+      "expected_outcome": "hazards_found",
+      "person_category": "elderly",
+      "description": "Stair treads obstructed with trailing electrical cables and shoe clutter"
+    },
+    {
+      "id": "stairs_02_dark",
+      "filename": "stairs_dark.jpg",
+      "environment": "stairs",
+      "expected_categories": [
+        "H06",
+        "H13"
+      ],
+      "expected_outcome": "hazards_found",
+      "person_category": "adult",
+      "description": "Dark unlit steep wooden stairs with heavy shadows obscuring steps"
+    },
+    {
+      "id": "stairs_03_clear",
+      "filename": "stairs_clear.jpg",
+      "environment": "stairs",
+      "expected_categories": [],
+      "expected_outcome": "none_observed",
+      "person_category": "adult",
+      "description": "Well-illuminated unobstructed stairs with continuous handrail"
+    },
+    {
+      "id": "bedroom_01_cord_crib",
+      "filename": "bedroom_cord_crib.jpg",
+      "environment": "bedroom",
+      "expected_categories": [
+        "H11"
+      ],
+      "expected_outcome": "hazards_found",
+      "person_category": "baby",
+      "description": "Baby crib with dangling window blind cord and monitor cord within reach"
+    },
+    {
+      "id": "bedroom_02_tall_bookcase",
+      "filename": "bedroom_tall_bookcase.jpg",
+      "environment": "bedroom",
+      "expected_categories": [
+        "H07"
+      ],
+      "expected_outcome": "hazards_found",
+      "person_category": "child",
+      "description": "Tall unanchored bookcase loaded with heavy books in toddler bedroom"
+    },
+    {
+      "id": "bedroom_03_clean",
+      "filename": "bedroom_clean.jpg",
+      "environment": "bedroom",
+      "expected_categories": [],
+      "expected_outcome": "none_observed",
+      "person_category": "child",
+      "description": "Orderly bedroom with anchored low furniture and clear walking path"
+    },
+    {
+      "id": "baby_01_coins_magnets",
+      "filename": "baby_coins_floor.jpg",
+      "environment": "baby_corner",
+      "expected_categories": [
+        "H09"
+      ],
+      "expected_outcome": "hazards_found",
+      "person_category": "baby",
+      "description": "Infant play mat with scattered coins and small magnetic beads"
+    },
+    {
+      "id": "baby_02_clean",
+      "filename": "baby_clean.jpg",
+      "environment": "baby_corner",
+      "expected_categories": [],
+      "expected_outcome": "none_observed",
+      "person_category": "baby",
+      "description": "Safe baby corner with soft padded play mat and age-appropriate soft toys"
+    },
+    {
+      "id": "outdoor_01_pothole_traffic",
+      "filename": "outdoor_pothole.jpg",
+      "environment": "outdoor",
+      "expected_categories": [
+        "H14"
+      ],
+      "expected_outcome": "hazards_found",
+      "person_category": "elderly",
+      "description": "Outdoor driveway with deep broken pothole and uneven ground near traffic gate"
+    },
+    {
+      "id": "outdoor_02_clean",
+      "filename": "outdoor_clean.jpg",
+      "environment": "outdoor",
+      "expected_categories": [],
+      "expected_outcome": "none_observed",
+      "person_category": "adult",
+      "description": "Evenly paved outdoor walkway with good drainage and secure fence"
+    },
+    {
+      "id": "corrupt_blurry_01",
+      "filename": "blurry_unusable.jpg",
+      "environment": "unknown",
+      "expected_categories": [],
+      "expected_outcome": "inconclusive",
+      "person_category": "adult",
+      "description": "Severe motion blur where no physical scene features are discernable"
+    }
+  ]
+}
